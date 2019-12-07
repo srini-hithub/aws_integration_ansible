@@ -1,1 +1,2 @@
 This file is to download from the ftp server
+This project is for the ftp purpose.
