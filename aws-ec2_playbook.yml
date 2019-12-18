@@ -1,0 +1,20 @@
+---
+- name: Aws integration with Ansible.
+  hosts: localhost
+  connection: local
+  user: root
+  tasks:
+
+  - name: To create an aws Instance using the Ansible.
+    ec2:
+      key_name: mycdn 
+      instance_type: t2.micro
+      image:  ami-0a74bfeb190bd404f 
+      wait: yes
+      #group: webserver
+      count: 1
+      vpc_subnet_id: subnet-bd672dd5 
+      region: ap-south-1
+      assign_public_ip: yes
+
+

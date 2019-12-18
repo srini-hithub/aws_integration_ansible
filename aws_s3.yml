@@ -1,0 +1,12 @@
+---
+- name: aws s3 integration.
+  hosts: localhost
+  connection: local
+  user: root
+  tasks:
+  - name: To create s3 bucket.
+    aws_s3:
+       bucket: pra123mybucket
+       mode: create
+       permission: public-read
+
